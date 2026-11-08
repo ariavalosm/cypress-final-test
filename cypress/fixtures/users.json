@@ -1,0 +1,10 @@
+{
+  "valido": {
+    "email": "customer@practicesoftwaretesting.com",
+    "password": "welcome01"
+  },
+  "passwordIncorrecta": {
+    "email": "customer@practicesoftwaretesting.com",
+    "password": "clave-equivocada"
+  }
+}
