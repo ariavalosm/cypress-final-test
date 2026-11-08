@@ -1,0 +1,7 @@
+{
+  "metodo": "credit-card",
+  "tarjeta": "1111-1111-1111-1111",
+  "vencimiento": "12/2030",
+  "cvv": "123",
+  "titular": "Ana Prueba"
+}
