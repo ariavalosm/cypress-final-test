@@ -19,4 +19,15 @@ describe("3.7 Prueba de API", () => {
       expect(res.body).to.have.property("access_token");
     });
   });
+  it("rechaza el login por API con contraseña incorrecta", function () {
+  cy.request({
+    method: "POST",
+    url: "https://api-with-bugs.practicesoftwaretesting.com/users/login",
+    body: this.users.passwordApi,
+    failOnStatusCode: false,
+  }).then((res) => {
+    expect(res.status).to.eq(401);
+    expect(res.body).to.not.have.property("access_token");
+  });
+});
 });

@@ -36,3 +36,30 @@ Cypress.Commands.add("fillPayment", (pago) => {
   cy.get('[data-test="cvv"]').type(pago.cvv);
   cy.get('[data-test="card-holder-name"]').type(pago.titular);
 });
+
+Cypress.Commands.add("fillRegisterForm", (data, email) => {
+  cy.get('[data-test="first-name"]').clear().type(data.nombre);
+  cy.get('[data-test="last-name"]').clear().type(data.apellido);
+  cy.get('[data-test="dob"]').clear().type(data.fechaNacimiento);
+  cy.get('[data-test="street"]').clear().type(data.direccion);
+  cy.get('[data-test="postal_code"]').clear().type(data.codigoPostal);
+  cy.get('[data-test="city"]').clear().type(data.ciudad);
+  cy.get('[data-test="state"]').clear().type(data.estado);
+  cy.get('[data-test="country"]').select(data.pais);
+  cy.get('[data-test="phone"]').clear().type(data.telefono);
+  cy.get('[data-test="email"]').clear().type(email);
+  cy.get('[data-test="password"]').clear().type(data.password);
+});
+
+Cypress.Commands.add("fillBillingAddress", (dir) => {
+  cy.get('[data-test="address"]').clear().type(dir.calle);
+  cy.get('[data-test="city"]').clear().type(dir.ciudad);
+  cy.get('[data-test="state"]').clear().type(dir.estado);
+  cy.get('[data-test="country"]').clear().type(dir.pais);
+  cy.get('[data-test="postcode"]').clear().type(dir.codigoPostal);
+});
+Cypress.Commands.add("checkoutAsUser", (user) => {
+  cy.get('[data-test="proceed-1"]').click();
+  cy.fillLoginForm(user.email, user.password);
+  cy.get('[data-test="proceed-2"]').click();
+});

@@ -1,0 +1,12 @@
+{
+  "nombre": "Ana",
+  "apellido": "Prueba",
+  "fechaNacimiento": "1995-05-15",
+  "direccion": "Calle Falsa 123",
+  "codigoPostal": "15001",
+  "ciudad": "Lima",
+  "estado": "Lima",
+  "pais": "PE",
+  "telefono": "999888777",
+  "password": "Prueba#2026x"
+}
