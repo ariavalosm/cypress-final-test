@@ -10,12 +10,6 @@ https://with-bugs.practicesoftwaretesting.com/
 | Plan de casos de prueba (Google Sheets) | https://docs.google.com/spreadsheets/d/1vtjkfnq8cG6aCQO7jaIOrLG6pOAJMoBU7h77cAL2HKg/edit?gid=1611920195#gid=1611920195
 | Tablero de bugs (Trello) | [COMPLETAR: link del Trello] |
 
-## Integrantes
-
-| Nombre | Email |
-|---|---|
-| [COMPLETAR] | [COMPLETAR] |
-
 ## Requisitos
 
 - Node.js (versión LTS)
